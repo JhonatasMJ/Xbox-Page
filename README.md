@@ -18,4 +18,4 @@ Durante o desenvolvimento do projeto, utilizei extensivamente práticas de grid 
 
 ## Deploy
 
-https://jhow-bikcraft.vercel.app/
+https://xbox-page-blond.vercel.app/
