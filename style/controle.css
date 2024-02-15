@@ -3,6 +3,7 @@
     grid-template-columns: 1.1fr 1fr;
     max-width: 1200px;
     padding: 120px 0px;
+    overflow: hidden;
     align-items: center;
     margin: 0 auto;
     gap: 90px;

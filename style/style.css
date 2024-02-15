@@ -47,12 +47,3 @@ img {
     display: none;
   }
 
-
-svg {
-  display: inline-block;
-  margin: 0 0.5rem;
-
-  animation: zoomIm;
-  animation-duration: 61s
-}
-
