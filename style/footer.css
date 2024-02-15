@@ -1,0 +1,43 @@
+.footer {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    max-width: 1200px;
+    padding: 120px 0px 60px  0px;
+    margin: 0 auto;
+}
+
+.direitos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    color: #777777;
+}
+
+@media (min-width: 766px) and (max-width:1114px) {
+    .footer {
+        padding: 120px 20px  60px 20px;
+    }
+}
+
+@media (min-width: 370px) and (max-width:428px) {
+    .footer {
+        padding: 120px 24px  60px 24px;
+    }
+    .direitos {
+        grid-template-columns: 1fr;
+        font-size: 0.75rem;
+    }
+
+}
+
+
+@media (max-width:360px) {
+    .footer {
+        padding: 120px 24px  60px 24px;
+    }
+    .direitos {
+        grid-template-columns: 1fr;
+        font-size: 0.75rem;
+    }
+}

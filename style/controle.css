@@ -1,0 +1,79 @@
+.controle {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    max-width: 1200px;
+    padding: 120px 0px;
+    align-items: center;
+    margin: 0 auto;
+    gap: 90px;
+}
+
+.conteudo-controle h2 {
+ font-size: 4rem;
+ font-weight: 600;
+ color: #fff;
+ line-height: 83.2px
+}
+
+.conteudo-controle h2 span {
+    color: #9BF00B;
+}
+
+.conteudo-controle p {
+    font-size: 1.5rem;
+    color: #C0C0C0;
+    margin-top: 24px;
+    line-height: 33.6px;
+}
+
+@media (min-width: 766px) and (max-width:1114px) {
+.controle {
+    padding: 120px 20px;
+}
+
+    .conteudo-controle h2 {
+        font-size: 2rem;
+        line-height: 42px;
+    }
+
+    .conteudo-controle p {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 370px) and (max-width:428px) {
+    .controle {
+        grid-template-columns: 1fr;
+        padding: 120px 24px;
+    }
+    .conteudo-controle {
+        text-align: center;
+    }
+    .conteudo-controle h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .conteudo-controle p {
+        font-size: 0.875rem;
+    }
+
+}
+
+@media (max-width:360px) {
+    .controle {
+        grid-template-columns: 1fr;
+        padding: 120px 24px;
+    }
+    .conteudo-controle {
+        text-align: center;
+    }
+    .conteudo-controle h2 {
+        font-size: 1.5rem;
+        line-height: 34px;
+        text-align: center;
+    }
+    .conteudo-controle p {
+        font-size: 0.875rem;
+    }
+
+}

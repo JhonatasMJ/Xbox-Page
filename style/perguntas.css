@@ -1,0 +1,132 @@
+.perguntas {
+    display: grid;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 0px;
+}
+
+.perguntas h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.perguntas h2 span {
+    color: #9BF00B;
+}
+
+.perguntas button {
+    display: grid;
+    grid-template-columns:   1fr auto;
+    align-items: center;
+    gap: 8px;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    padding: 12px 0px;
+}
+
+.perguntas dl > div {
+    padding: 1px 20px;
+    border-radius: 4px;
+}
+
+.perguntas dl > div:nth-child(odd){
+    background-color: #111411;
+}
+
+
+.perguntas dl {
+    display: grid;
+    gap: 40px;
+    margin-top: 32px;
+}
+
+.perguntas dd {
+    display: none;
+    padding: 40px 0px;
+
+}
+
+.perguntas dd.ativa {
+    display: block;
+}
+
+
+
+
+.perguntas dd {
+    color: #C0C0C0;
+    font-weight: 500; 
+     max-width: 80ch;  
+     margin-bottom: 10px;
+}
+
+.perguntas button:hover::after,
+.perguntas button[aria-expanded=true]::after{
+    transform: rotate(180deg) 
+}
+
+.perguntas button::after {
+    content: "";
+    display: inline-block;
+    width: 14px;
+    height: 6px;
+    background-image: url("../imgs/seta.svg");
+    transition: 0.3s;
+}
+
+@media (min-width: 766px) and (max-width:1114px) {
+    .perguntas {
+        padding: 60px 20px
+    }
+
+    .perguntas button {
+        font-size: 1rem;
+    }
+    .perguntas h2 {
+        text-align: center;
+    }
+}
+
+@media (min-width: 370px) and (max-width:428px) {
+    .perguntas {
+        padding: 60px 24px;
+    }
+
+    .perguntas h2 {
+       font-size: 1.5rem;
+       text-align: center;
+    }
+
+    .perguntas button {
+        font-size: 0.75rem;
+    }
+    .perguntas dd {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width:360px) {
+    .perguntas {
+        padding: 60px 24px;
+    }
+
+    .perguntas h2 {
+       font-size: 1.5rem;
+       text-align: center;
+    }
+
+    .perguntas button {
+        font-size: 0.75rem;
+    }
+    .perguntas dd {
+        font-size: 0.75rem;
+    }
+
+}

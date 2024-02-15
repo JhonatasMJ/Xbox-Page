@@ -1,0 +1,130 @@
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 32px 0px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 42px;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    gap: 38px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    transition: 0.3s ease;
+    padding: 8px;
+}
+
+nav ul li a:hover {
+    background-color: #67676763;
+
+    border-radius: 50px;
+}
+
+.background {
+    background-color: #67676763;
+    padding: 8px;
+    border-radius: 50px;
+}
+
+
+
+.botao {
+    display: flex;
+    align-items: center;
+    background-color: #9BF00B;
+    color: #0C0C0C;
+    padding: 12px 32px;
+    font-weight: 700;
+    text-decoration: none;
+    border: 2px solid transparent;
+    transition: 0.3s ease;
+    margin-left: 60px;
+}
+
+.botao:hover {
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #9BF00B
+}
+
+
+
+
+
+@media (min-width: 766px) and (max-width:1114px) {
+    header {
+        padding: 32px 20px;
+    }
+
+    nav ul li a {
+        font-size: 0.8rem;
+        gap: 40px;
+    }
+    ul {
+        gap: 0px;
+    }
+    .botao {
+        padding: 8px 24px;
+    }
+}
+
+@media (min-width: 370px) and (max-width:428px){
+    header {
+        flex-direction: column;
+
+    }
+
+    nav {
+        flex-direction: column;
+    }
+    .botao {
+         text-align: center;
+        padding: 12px 78px;
+        margin: 40px 20px 20px 20px;
+    }
+
+    nav ul li a {
+        font-size: 0.8rem;
+    }
+
+    ul {
+        gap: 20px;
+    }
+}
+
+@media (max-width:360px) {
+    header {
+        flex-direction: column;
+
+    }
+
+    nav {
+        flex-direction: column;
+    }
+    .botao {
+         text-align: center;
+        padding: 12px 70px;
+        margin: 40px 20px 20px 20px;
+    }
+
+    nav ul li a {
+        font-size: 0.8rem;
+    }
+
+    ul {
+        gap: 20px;
+    }
+}
